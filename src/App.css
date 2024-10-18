@@ -1,0 +1,47 @@
+/* App.css */
+.app {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+.towers {
+  display: flex;
+  gap: 20px;
+}
+
+.tower {
+  width: 20px;
+  height: 150px;
+  border: 1px solid black;
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+  cursor: pointer;
+}
+
+.tower.selected {
+  background-color: lightblue;
+}
+
+.disk {
+  width: calc(20px + 20px * var(--size));
+  height: 20px;
+  background-color: brown;
+  margin-bottom: 5px;
+}
+
+.disk-1 {
+  --size: 0;
+}
+
+.disk-2 {
+  --size: 1;
+}
+
+.disk-3 {
+  --size: 2;
+}
